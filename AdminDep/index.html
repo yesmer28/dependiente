@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Cupones</title>
+    <script src="https://kit.fontawesome.com/0f632cf51c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="main">
+		<header id="header">
+			<h1>LA CUPONERA</h1>
+			<a class="abrir-modal-canje" href="#">Ver cupones registrados</a>
+		</header>
+		<div id="main__div-container-flex">
+			<form action="" id="form-canje">
+				<h2>REGISTRAR CUPÓN</h2>
+				<label class="label-inp-canje" for="" id="label-dui-usuario">
+					<p>DUI del usuario</p>
+					<input required class="input-canje" maxlength="10" type="text" placeholder="DUI de usuario" id="input-dui-usuario">
+					<p class="alerta-error-input" id="alerta-dui-usuario"></p>
+				</label>
+				<div class="btn-bg btn-canjear" id="btn-canjear">Agregar</div>
+			</form>
+		</div>
+				<!-- container modal de canjes -->
+                <div id="main-container-modal-canjes-inactivo">
+                    <div id="container-canjes">
+                        <div id="container-title-modal">
+                            <h3>Cupones registrados</h3> 
+                            <i class="fa-solid cerrar-modal-canjes fa-x"></i>
+                        </div>
+                        <!-- lista de los canjes -->
+                        <section id="lista-canjes">
+                            <!-- acá se registra cada canje que se va haciendo -->
+                            <p id="aviso-registro-canje-vacio">No hay canjes</p>
+                        </section>
+                        <footer id="footer-modal-canjes">
+                            <b id="comisiones">Cantidad Total De comisiones:</b>
+                            <p id="total-comisiones">$ 2</p>
+                            
+                        </footer>
+                    </div>
+                </div>
+        <section id="container-alert">
+            <i class="bi-alert icon-alert"></i>
+            <p class="msg-alert"></p>
+        </section>
+		<footer id="main__footer">
+			<h2>DESARROLLADO POR OKS 6.0</h2>
+		</footer>
+	</main>
+</body>
+<script src="./script.js"></script>
+</html>
